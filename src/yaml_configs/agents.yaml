@@ -1,0 +1,34 @@
+# Agent Configuration
+# -------------------
+# Controls which agents are enabled and
+# agent-specific parameters
+
+agents:
+  audio:
+    enabled: true
+    model: whisper-1
+
+  emotion:
+    enabled: true
+    temperature: 0.2
+
+  tagging:
+    enabled: true
+    temperature: 0.2
+
+  reasoning:
+    enabled: true
+    temperature: 0.3
+
+  risk:
+    enabled: true
+    temperature: 0.2
+
+  video:
+    enabled: true
+    frame_sample_interval_seconds: 5
+
+rag_chat:
+  enabled: true
+  temperature: 0.4
+  max_context_chunks: 5

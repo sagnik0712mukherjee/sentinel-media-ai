@@ -1,0 +1,28 @@
+# Application Configuration
+# -------------------------
+
+app:
+  name: sentinel-media-ai
+  environment: local
+
+paths:
+  workspace:
+    base_dir: workspace
+    video_dir: workspace/videos
+    audio_dir: workspace/audio
+    frames_dir: workspace/frames
+
+processing:
+  text_chunking:
+    chunk_size: 500
+    overlap: 50
+
+  scene_detection:
+    scene_duration_seconds: 30
+
+rag:
+  top_k: 5
+  max_chat_history: 6
+
+logging:
+  level: INFO

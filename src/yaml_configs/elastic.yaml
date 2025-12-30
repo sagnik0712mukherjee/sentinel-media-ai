@@ -1,0 +1,19 @@
+# Elasticsearch Configuration
+# ---------------------------
+
+elasticsearch:
+  enabled: true
+
+  connection:
+    url: ${ELASTICSEARCH_URL}
+    username: ${ELASTICSEARCH_USER}
+    password: ${ELASTICSEARCH_PASSWORD}
+
+  indices:
+    media_index: sentinel_media_docs
+    transcript_index: sentinel_transcripts
+    vector_index: sentinel_vectors
+
+  vector_settings:
+    embedding_dims: 384
+    similarity: cosine
