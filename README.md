@@ -93,3 +93,8 @@ DATABASE_URL=sqlite:///sentinel.db
 ```bash
 streamlit run app.py
 ```
+
+## Author
+
+**Sagnik Mukherjee**  
+[GitHub Profile](https://github.com/sagnik0712mukherjee)
